@@ -7,13 +7,11 @@
 #include "stb/stb_image_resize2.h"
 #include "input_handler.h"
 
-#define IMAGE "superman.png"
-
 #define ASCII_CHARS " .:-=+*#%@"
-#define MAX_WIDTH 200
-#define MAX_HEIGHT 200
 
-
+// the cap size
+#define MAX_WIDTH 200 // MAX_WIDTH is the cap for landscape images and squares, height adjust proportionally to this
+#define MAX_HEIGHT 200 // the cap for portrait imaes, width adjusts proportionally
 
 void store_brightness_pixels(int index, int width, unsigned char brightness);
 void process_image(char file_path[]);
